@@ -1,1 +1,2 @@
-console.log(require("fs").readFileSync(0, "utf8").trim() + "??!")
+const fs = require("fs").readFileSync("dev/stdin").toString().trim();
+console.log(fs+"??!");
