@@ -22,3 +22,28 @@
 
  <p>첫째 줄에 A+B를 출력한다.</p>
 
+
+##Explanation
+```javascript
+
+//need file system module
+const fs = require("fs");
+//read the file using readFileSync function, this function return Buffer object, so need to convert it into String.
+let input = fs.readFileSync("/dev/stdin").toString();
+//store it in the Array after seperate the lines with split("\n"). same line will be in the same quote.
+input = input.split("\n");
+
+//in this case input value is only one line so grab the value with index 0.
+input = input[0];
+//now seperate it with space and convert it into number for operational function.
+//.map() loop through all value. using + is simple way of Number(item)
+input = input.split(' ').map((item) => +item);
+//now set the input value for the function.
+solution(input[0], input[1]);
+
+function solution(A, B) {
+    // Write your code
+    console.log(A + B);
+}
+
+```
