@@ -50,8 +50,8 @@ const rl = readline.createInterface({
 });
 
 ```
-특이한 점은 readline을 사용하면서도 로컬 파일을 불러올때는 여전히 fs모듈도 필요로 하다는 것이다. 
-readline.createReadStream을 하면 error 가 난다.
+특이한 점은 `readline`을 사용하면서도 로컬 파일을 불러올때는 여전히 `fs`모듈도 필요로 하다는 것이다. 
+`readline.createReadStream`을 하면 `error` 가 난다.
 
 ### Reference
 [fs,readline 입출력 방식](https://nyang-in.tistory.com/156) </br>
