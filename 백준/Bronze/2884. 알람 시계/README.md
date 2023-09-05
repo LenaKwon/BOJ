@@ -36,6 +36,7 @@
 
 ### Thinking
 아래 코드는 vscode는 정상출력되지만 계속 런타임오류
+계산방식도 일차원적으로 접근하는 편이 코드가 짧아짐
 ```javascript
 const input =require("fs").readFileSync("dev.stdin").toString().split(" ");
 let hour = Number(input[0]);
