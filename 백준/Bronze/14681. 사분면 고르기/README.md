@@ -33,7 +33,7 @@
 로컬 `txt` 파일을 불러올때 코드는 찾기 힘들었는데 아래가 하나의 방법이다.
 
 ```javascript
-//solution
+//solution for reading txt file
 
 const fs = require("fs");
 const readline = require('readline');
