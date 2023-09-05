@@ -47,5 +47,5 @@ const rl = readline.createInterface({
 });
 ```
 
-[fs,readline 입출력 방식](https://nyang-in.tistory.com/156) \n
+[fs,readline 입출력 방식](https://nyang-in.tistory.com/156) </br>
 [readline tutorial](https://www.youtube.com/watch?v=dKYNLjtTtXw)
