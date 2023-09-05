@@ -22,3 +22,6 @@
 
  <p>시험 성적을 출력한다.</p>
 
+## Thinking
+중첩 삼항연산자(Multiple Conditional (Ternary) Operators) 이용해서 출력 가능
+받아오는 데이터 타입이 숫자라서 굳이 정수화 시켜주지 않아도 됨.
