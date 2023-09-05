@@ -37,15 +37,15 @@ fs 모듈을 사용할 경우 런타임오류가 발생하여 readline 모듈을
 const fs = require("fs");
 const readline = require('readline');
 const rl = readline.createInterface({
-	//vscode 에서 입력할때 코드
+//vscode 에서 입력할때 코드
     input: fs.createReadStream("input.txt"),
     output: false,
     console:false
 //제출시코드 
-    // input: process.stdin,
-	   // output: process.stdout
+ // input: process.stdin,
+ // output: process.stdout
 });
 ```
 
-[fs,readline 입출력 방식](https://nyang-in.tistory.com/156)
+[fs,readline 입출력 방식](https://nyang-in.tistory.com/156) \n
 [readline tutorial](https://www.youtube.com/watch?v=dKYNLjtTtXw)
