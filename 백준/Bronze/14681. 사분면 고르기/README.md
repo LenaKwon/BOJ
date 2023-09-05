@@ -29,22 +29,30 @@
  <p>점 (x, y)의 사분면 번호(1, 2, 3, 4 중 하나)를 출력한다.</p>
 
 ### Thinking
-fs 모듈을 사용할 경우 런타임오류가 발생하여 readline 모듈을 사용해야 한다. 
-여러 군데를 참고 했지만 readline 모듈 사용시 vscode 로 로컬 input을 불러올때 방법을 없었다. 
+`fs` 모듈을 사용할 경우 런타임오류가 발생하여 `readline` 모듈을 사용해야 한다. 
+로컬 `txt` 파일을 불러올때 코드는 찾기 힘들었는데 아래가 하나의 방법이다.
 
 ```javascript
+//solution
+
 const fs = require("fs");
 const readline = require('readline');
 const rl = readline.createInterface({
+
 //vscode 에서 입력할때 코드
     input: fs.createReadStream("input.txt"),
     output: false,
     console:false
+
 //제출시코드 
  // input: process.stdin,
  // output: process.stdout
 });
+
 ```
+특이한 점은 readline을 사용하면서도 로컬 파일을 불러올때는 여전히 fs모듈도 필요로 하다는 것이다. 
+readline.createReadStream을 하면 error 가 난다.
+
 ### Reference
 [fs,readline 입출력 방식](https://nyang-in.tistory.com/156) </br>
 [readline tutorial](https://www.youtube.com/watch?v=dKYNLjtTtXw)
