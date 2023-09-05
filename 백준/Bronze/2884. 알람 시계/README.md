@@ -35,7 +35,7 @@
  <p>첫째 줄에 상근이가 창영이의 방법을 사용할 때, 설정해야 하는 알람 시간을 출력한다. (입력과 같은 형태로 출력하면 된다.)</p>
 
 ### Thinking
-아래 코드는 vscode는 정상출력되지만 계속 런타임오류
+아래 코드는 vscode는 정상출력되지만 계속 런타임오류</br>
 계산방식도 일차원적으로 접근하는 편이 코드가 짧아짐
 ```javascript
 const input =require("fs").readFileSync("dev.stdin").toString().split(" ");
