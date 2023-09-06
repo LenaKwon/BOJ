@@ -34,4 +34,4 @@
 
 ## Thinking
 [Sort()원리설명](https://www.youtube.com/watch?v=RW25tEAMC9w) </br>
-[for,foreach,filter,map,reduce 기능비교](https://daesuni.github.io/Loop-performance/)
+[for, foreach, filter, map, reduce  기능비교](https://daesuni.github.io/Loop-performance/)
