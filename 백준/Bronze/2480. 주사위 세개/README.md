@@ -32,3 +32,6 @@
 
  <p>첫째 줄에 게임의 상금을 출력 한다.</p>
 
+## Thinking
+[Sort()원리설명](https://www.youtube.com/watch?v=RW25tEAMC9w) </br>
+[for,foreach,filter,map,reduce 기능비교](https://daesuni.github.io/Loop-performance/)
