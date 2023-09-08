@@ -1,7 +1,8 @@
-const input = require('fs').readFileSync('/dev/stdin').toString().trim().split('\n');
+let input = require("fs").readFileSync("dev/stdin").toString().trim().split("\n");
 
-for (let i = 0; i < input.length - 1; i++) {
-    let numbers = input[i].split(' ').map(v => v * 1);
+for(let i=0; i< input.length-1; i++){
+    let nums = input[i].split(" ").map(val=>+val);
+    console.log (nums[0]+nums[1]);
+  
     
-    console.log(numbers[0] + numbers[1]);
 }
