@@ -34,3 +34,16 @@
 
  <p>각 테스트케이스마다 A+B를 한 줄에 하나씩 순서대로 출력한다.</p>
 
+## 생각할 점
+ 콘솔시간 측정하는 방법 
+console.time('duration_time');
+측정하고 싶은 코드 사이에 넣기
+console.timeEnd('duration_time');
+측정결과 별로 도움은 안되고, 
+
+***통과된 코드로 비교해 봤을때 
+for loop 안에서 console.log 를 계속 출력하는 것보다
+값을 변수에 저장한 뒤에 for loop 밖에서 한번에 출력하는 것이 시간이 세이브된다. 
+
+문자를 숫자로 변환시킬 때 map(val=>+val) 를 쓰든 Number 를 쓰든 큰 상관은 없었다.
+
