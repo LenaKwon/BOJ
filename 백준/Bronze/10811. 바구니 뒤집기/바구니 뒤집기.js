@@ -1,5 +1,4 @@
 const fs = require("fs");
-
 const [MnN, ...exes] = fs
   .readFileSync("/dev/stdin")
   .toString()
@@ -7,6 +6,7 @@ const [MnN, ...exes] = fs
   .split("\n");
 const [n, m] = MnN.split(" ").map((e) => +e);
 const baskets = new Array(n).fill(0).map((v, i) => i + 1);
+
 let result = "";
 
 const execute = (str) => {
