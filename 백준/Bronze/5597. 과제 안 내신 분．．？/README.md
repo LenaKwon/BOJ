@@ -24,3 +24,23 @@
 
  <p>출력은 2줄이다. 1번째 줄엔 제출하지 않은 학생의 출석번호 중 가장 작은 것을 출력하고, 2번째 줄에선 그 다음 출석번호를 출력한다.</p>
 
+## 생각할 점
+```javascript
+
+//다른 풀이 - Set().prototype.has() 를 이용해서 더 간단히 코딩했다.
+
+const INPUT_FILE = process.platform === 'linux' ? 'dev/stdin' : './input.txt';
+let submittedStudents = require('fs').readFileSync(INPUT_FILE).toString().trim().split('\n').map(Number);
+
+submittedStudents = new Set(submittedStudents); 
+for (let student = 1; student <= 30; student += 1) {
+  if (!submittedStudents.has(student)) console.log(student);
+}
+
+//has() 메서드는 Set 객체에 주어진 요소가 존재하는지 여부를 판별해 반환.
+//자료구조 중 세트(set)는 순서대로 저장하는 배열과 다르게 순서가 없는 중복되지 않은 데이터의 집합이다. 그래서 인덱스로 접근 불가능.
+//set() 은 class 여서 new 키워드와 생성자를 통해 객체생성 가능하다 const set = new Set();
+//배열을 인자로 받을 때 const numSet = new Set([1, 2, 3]); // Set(3) {1, 2, 3}
+//새로운 값을 추가할 때는 add() 메서드 set.add(1); // Set(1) {1} 중복된 값이 추가되지 않으며 유일한 값만 저장됨
+
+```
