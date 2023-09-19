@@ -24,3 +24,20 @@
 
 <p>만약, 어떤 알파벳이 단어에 포함되어 있지 않다면 -1을 출력한다. 단어의 첫 번째 글자는 0번째 위치이고, 두 번째 글자는 1번째 위치이다.</p>
 
+# 다른 정답코드
+내 풀이와 알고리즘은 비슷하지만, `ASCII` 코드를 이용해서 알파벳 배열을 굳이 따로 만들지 않았고, `String.fromCharCode()` 메서드를 이용해서 만들었다.</br>
+아스키코드는 'a'는  `97`번이고, 'z'는 `122`번이기 때문에 97-122까지 반복 실행하고, 이 값을 `String.fromCharCode` 메서드를 사용하여 알파벳 문자을 생성한다. </br>
+`indexOf` 메서드는 값이 있다면 그 값의 `index`를 출력하고, 없다면 `-1` 을 출력한다.</br>
+내가 사용한 `search` 메서드도 똑같은 결과값을 출력한다.</br>
+
+```javascript
+const input = require("fs").readFileSync("/dev/stdin").toString();
+
+const result = [];
+
+for (let i = 97; i <= 122; i++) {
+  result.push(input.indexOf(String.fromCharCode(i)));
+}
+
+console.log(result.join(" "));
+```
